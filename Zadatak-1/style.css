@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-image: url("header.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    color: white;
+    font-size: 2vw;
+    border-bottom: 2vw solid white;
+}
+
+button{
+    outline: none;
+}
+
+.cont{
+    box-sizing: border-box;
+    color: white;
+    margin: 1vw 30vw 1vw;
+    height: 4vw;
+    font-size: 1.5vw;
+}
+
+.cont-1{
+    background-color: #1fbce4;
+}
+ 
+.cont-2{
+    background-color: #e9510a;
+}
+
+
+.btn-circle{
+    border: 0.2vw solid red;
+    border-radius: 4vw;
+    color: red;
+    outline: none;
+    width: 2vw;
+    height: 2vw;
+    padding: 0;
+    display: inline-block;
+    line-height: 0.1vw;
+    font-weight: 900;
+    font-size: 0.5vw;
+    transform: rotate(90deg);
+}
+
+.btn-hide{
+    margin-left: 1vw;
+}
+
+.btn-delete{
+    font-size: 1vw;
+    font-weight: 700;
+    padding-bottom: 0.1vw;
+    transform: rotate(180deg);
+    border-radius: 0;
+    right: 0;
+    top: 0;
+    color: white;
+    border-color: white;
+    background-color: red;
+}
+
+.row-sm{
+    font-size: 2vw;
+}
+
+.list-income{
+    color: #1fbce4;
+}
+
+.list-expenses{
+    color: #e9510a;
+}
+
+.text{
+    color: black;
+}
+
+form{
+    background-color: rgb(231, 228, 228);
+    margin-top: -5vw;
+    padding-top: 3vw;
+    font-size: 2vw;
+    
+}
+
+.row{
+    margin-right: 0;
+}
+
+.price{
+    height: 8vw;
+    font-size: 5vw;
+}
+
+.crosed{
+    text-decoration: line-through;
+    color: black;
+    background-color: pink;
+}
+
+.perc{
+    background-color: pink;
+    margin-left: 1vw;
+}
+
+.flx-grw{
+    flex-basis: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+    .row-sm {
+      display: block;
+    }
+    li{
+        width: 100vw;
+    }
+  }
+
