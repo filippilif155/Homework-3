@@ -1,0 +1,84 @@
+{
+    "GTA V" : {
+        "img" : "https://m.media-amazon.com/images/M/MV5BZTI4YWM0YjItNTk4Mi00N2NkLTlkZjItOGIzNTdmZTQyOTk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_CR0,0,815,1000_AL_.jpg",
+        "link" : "https://www.imdb.com/title/tt2103188/",
+        "date" : "14.09.2013.",
+        "author" : "Rockstar",
+        "genre" : ["action", "RPG"],
+        "rating" : 9.4
+    },
+    "Red Dead Redemption 2" : {
+        "img" : "https://m.media-amazon.com/images/M/MV5BMThiMGJkNDUtYjIxYy00ZTRhLWE5NmUtNzI4NTJlOGI4ZTMwXkEyXkFqcGdeQXVyNTk1ODMyNjA@._V1_.jpg",
+        "link" : "https://www.imdb.com/title/tt6161168/",
+        "date" : "26.10.2018.",
+        "author" : "Rockstar",
+        "genre" : ["action","adventure" ,"crime"],
+        "rating" : 9.7
+    },
+    "The Witcher 3: Wild Hunt" : {
+        "img" : "https://m.media-amazon.com/images/M/MV5BYjY3ODFmNWUtNjhjNC00NTExLWIxYmEtYmQ0YTk5NjkzYTUwXkEyXkFqcGdeQXVyNzEyNjcwNTk@._V1_UX182_CR0,0,182,268_AL_.jpg",
+        "link" : "https://www.imdb.com/title/tt2993508/",
+        "date" : "19.05.2015.",
+        "author" : "Rockstar",
+        "genre" : ["action","adventure" ,"drama"],
+        "rating" : 9.7
+
+    },
+    "Prince of Persia: The Sands of Time" :{
+        "img" : "https://m.media-amazon.com/images/M/MV5BY2I1ZTA3N2QtMzRhYi00NzU3LWI0YjYtY2U3MTc4ZmM3NWYzXkEyXkFqcGdeQXVyODg1MTc3MTM@._V1_SY1000_CR0,0,707,1000_AL_.jpg",
+        "link" : "https://www.imdb.com/title/tt0384444/",
+        "date" : "04.11.2003.",
+        "author" : "Ubisoft",
+        "genre" : ["action", "adventure", "family"],
+        "rating" : 8.5
+    },
+    "Prince of Persia: Warrior Within" :{
+        "img" : "https://m.media-amazon.com/images/M/MV5BODE0OWU2NWQtMDE3OS00MjU5LTliNzktNmM0NzJiNjdjMTU3XkEyXkFqcGdeQXVyODg1MTc3MTM@._V1_.jpg",
+        "link" : "https://www.imdb.com/title/tt0437437/",
+        "date" : "30.11.2004.",
+        "author" : "Ubisoft",
+        "genre" : ["action", "adventure", "fantasy"],
+        "rating" : 8.7
+    },
+    "Prince of Persia: The Two Thrones" :{
+        "img" : "https://m.media-amazon.com/images/M/MV5BOGI4OGU1ZTQtZTY0OS00Yjk2LWE0MTAtNGU0YjRjY2E5YWM1XkEyXkFqcGdeQXVyODg1MTc3MTM@._V1_.jpg",
+        "link" : "https://www.imdb.com/title/tt0483781/",
+        "date" : "05.12.2005.",
+        "author" : "Ubisoft",
+        "genre" : ["action", "adventure", "drama"],
+        "rating" : 8.5
+    },
+    "Prince of Persia: The Forgotten Sand" :{
+        "img" : "https://m.media-amazon.com/images/M/MV5BMDVkY2UyMDAtMWE2My00Y2E1LTk2MzktY2FhOGMxNjk5NDE0XkEyXkFqcGdeQXVyNjc1ODU3OTE@._V1_SY1000_CR0,0,709,1000_AL_.jpg",
+        "link" : "https://www.imdb.com/title/tt1712561/",
+        "date" : "18.05.2010.",
+        "author" : "Ubisoft",
+        "genre" : ["action", "adventure", "family"],
+        "rating" : 7.4
+    },
+    "Half-Life 2" : {
+        "img" : "https://m.media-amazon.com/images/M/MV5BNzEwNDk5NzIxM15BMl5BanBnXkFtZTgwNDA3NzE2MDE@._V1_.jpg",
+        "link" : "https://www.imdb.com/title/tt0374692/?ref_=vp_back",
+        "date" : "16.11.2004.",
+        "author" : "Vavle",
+        "genre" : ["action", "adventure", "Sci-Fi"],
+        "rating" : 9.4
+    },
+    "Mafia: The City of Lost Heaven" : {
+        "img" : "https://m.media-amazon.com/images/M/MV5BMzcwNTQzMDY3MF5BMl5BanBnXkFtZTgwNjM3MzQxMTE@._V1_.jpg",
+        "link" : "https://www.imdb.com/title/tt0338221/",
+        "date" : "06.09.2002.",
+        "author" : "Illusion",
+        "genre" : ["action", "adventure", "drama"],
+        "rating" : 9.2
+    },
+    "Syberia" : {
+        "img" : "https://m.media-amazon.com/images/M/MV5BN2ExMzgxZDYtZmRkZi00YTkxLTgzNTMtNDg5ODM5NGM4MWQyXkEyXkFqcGdeQXVyMTA1OTEwNjE@._V1_SY1000_CR0,0,697,1000_AL_.jpg",
+        "link" : "https://www.imdb.com/title/tt0436810/",
+        "date" : "09.01.2002.",
+        "author" : "Microids",
+        "genre" : ["adventure", "drama"],
+        "rating" : 8.7
+    }
+
+}

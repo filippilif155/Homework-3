@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game lister</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="form" id="form">
+        <input type="text" class="text" id="text" placeholder="Type here">
+        
+        <input type="button" value="Search" class="btn" id="btn" onclick="resolveEvent()">
+        <div class="radio-btns">
+            <input type="radio" id="name" class="name-radio" name="search" value="name" checked> <label for="name">Name</label>
+            <input type="radio" id="genre" class="genre" name="search" value="genre"> <label for="genre">Genre</label>
+        </div>
+        <select name="rating" size="1"  class="rating" id="rating">
+        
+            <option value="1" id="value1">1</option>
+            <option value="2" id="value2">2</option>
+            <option value="3" id="value3">3</option>
+            <option value="4" id="value4">4</option>
+            <option value="5" id="value5">5</option>
+            <option value="6" id="value6">6</option>
+            <option value="7" id="value7">7</option>
+            <option value="8" id="value8">8</option>
+            <option value="9" id="value9">9</option>
+            <option value="10" id="value10">10</option>
+        
+        </select>
+        </div>
+
+        <table class="table" id="table" cellpadding="10">
+        
+            <tr class="table-header">
+                <th>Number</th>
+                <th>Picture</th>
+                <th>Relase date</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Rating</th>
+            </tr>
+
+        </table>
+        <button class="load-btn hidden" onclick="drawTable()" id="load-btn">Load more</button>
+
+
+
+    <script src="custom.js"></script>
+</body>
+</html>
