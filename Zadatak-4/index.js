@@ -25,41 +25,43 @@ searchBox.addEventListener("focusout", () =>{
 
 var id = localStorage.getItem("jsonid");
 
-fetch(`https://api.jsonbin.io/b/${id}`, {
-        method: 'get',
-        headers: {
-            'Content-Type': 'application/json',
-            'secret-key': "$2b$10$mYqOBJTUxyvQhz.9nvQay.L0/to7DRDuWCHv5LlOwjr2yUsHK.7w."
-          }
-    }).then(function(response) {
-          return response.json();
-    }).then(function(data) {
-          for(prop in data){
-            let newItem = document.createElement("li"); 
-            newItem.className = "list-group-item";
-            const textNode = document.createTextNode(prop);
-    
-            let b = document.createElement("button");
-            b.innerHTML = "X"
-            b.className = "btn btn-danger btn-sm float-right delete";
-            let cBox = document.createElement("input");
-            cBox.type = "checkbox";
-            cBox.className =  "float-right c-box";
-            cBox.addEventListener("click", colorItem);
-            if(data[prop] === true){
-                cBox.checked = true;
-                localStorageObj[prop] = true;
-                newItem.style.backgroundColor = "#28a745";
+if(id !== "undefined"){
+    fetch(`https://api.jsonbin.io/b/${id}`, {
+            method: 'get',
+            headers: {
+                'Content-Type': 'application/json',
+                'secret-key': "$2b$10$mYqOBJTUxyvQhz.9nvQay.L0/to7DRDuWCHv5LlOwjr2yUsHK.7w."
             }
-            else{
-                localStorageObj[prop] = false;
+        }).then(function(response) {
+            return response.json();
+        }).then(function(data) {
+            for(prop in data){
+                let newItem = document.createElement("li"); 
+                newItem.className = "list-group-item";
+                const textNode = document.createTextNode(prop);
+        
+                let b = document.createElement("button");
+                b.innerHTML = "X"
+                b.className = "btn btn-danger btn-sm float-right delete";
+                let cBox = document.createElement("input");
+                cBox.type = "checkbox";
+                cBox.className =  "float-right c-box";
+                cBox.addEventListener("click", colorItem);
+                if(data[prop] === true){
+                    cBox.checked = true;
+                    localStorageObj[prop] = true;
+                    newItem.style.backgroundColor = "#28a745";
+                }
+                else{
+                    localStorageObj[prop] = false;
+                }
+                newItem.appendChild(textNode);
+                newItem.appendChild(b);
+                newItem.appendChild(cBox);
+                itemList.appendChild(newItem);
             }
-            newItem.appendChild(textNode);
-            newItem.appendChild(b);
-            newItem.appendChild(cBox);
-            itemList.appendChild(newItem);
-          }
-    });
+        });
+    }
 
 let filter = document.getElementById("filter");
 filter.addEventListener("keyup", filterItems)
@@ -94,8 +96,7 @@ function addItem(event) {
 
 function removeItem(event) {
     if (event.target.classList.contains("delete")) {
-        if (confirm("Jeste li sigurni da zelite da uklonite item?")) {
-            console.log(localStorageObj);       
+        if (confirm("Jeste li sigurni da zelite da uklonite item?")) {   
             event.target.parentNode.parentNode.removeChild(event.target.parentNode);
             delete localStorageObj[event.target.parentNode.textContent.slice(0, -1)];
             
