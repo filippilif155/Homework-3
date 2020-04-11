@@ -11,10 +11,6 @@ const table = document.getElementById("table");
 
 const tBody = table.children[0];
 
-var klk = document.getElementsByClassName("delete-btn");
-for(let i = 0; i < klk.length;i++){
-    klk[i].addEventListener("click", deleteItem);
-}
 
 
 function checkStatus(response) {
@@ -146,3 +142,5 @@ function drawTable(){
 function deleteItem(e){
     e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
 }
+
+resolveEvent();
